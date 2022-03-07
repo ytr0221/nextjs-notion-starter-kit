@@ -182,7 +182,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         <meta name='twitter:title' content={title} />
         <meta property='twitter:domain' content={site.domain} />
 
-        {config.twitter && (
+        {/* config.twitter && (
           <meta name='twitter:creator' content={`@${config.twitter}`} />
         )}
 
@@ -210,7 +210,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
             <meta property='og:url' content={canonicalPageUrl} />
             <meta property='twitter:url' content={canonicalPageUrl} />
           </>
-        )}
+        )*/}
 
         <title>{title}</title>
       </Head>
