@@ -259,7 +259,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         recordMap={recordMap}
         rootPageId={site.rootNotionPageId}
         fullPage={!isLiteMode}
-        darkMode={darkMode.value}
+        darkMode={false/*darkMode.value*/}
         previewImages={site.previewImages !== false}
         showCollectionViewDropdown={false}
         showTableOfContents={showTableOfContents}
@@ -269,7 +269,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         defaultPageCoverPosition={config.defaultPageCoverPosition}
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapNotionImageUrl}
-        searchNotion={searchNotion}
+        searchNotion={/*searchNotion*/}
         pageFooter={comments}
         pageAside={pageAside}
         footer={
