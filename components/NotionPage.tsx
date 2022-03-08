@@ -151,7 +151,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           repo={config.utterancesGitHubRepo}
           issueMap='issue-term'
           issueTerm='title'
-          theme='github-light'//{darkMode.value ? 'photon-dark' : 'github-light'}
+          theme={darkMode.value ? 'photon-dark' : 'github-light'}
         />
       )
     }
@@ -260,7 +260,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         recordMap={recordMap}
         rootPageId={site.rootNotionPageId}
         fullPage={!isLiteMode}
-        darkMode={!darkMode.value}
+        darkMode={darkMode.value}
         previewImages={site.previewImages !== false}
         showCollectionViewDropdown={false}
         showTableOfContents={showTableOfContents}
@@ -275,7 +275,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={
           <Footer
-            isDarkMode={!darkMode.value}
+            isDarkMode={darkMode.value}
             toggleDarkMode={darkMode.toggle}
           />
         }
