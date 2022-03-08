@@ -12,6 +12,12 @@
   --notion-header-height: 54px;
 }
 
+.notion-app {
+  /*position: relative;*/
+  background: rgba(0,0,0,0);
+  /*min-height: 100vh;*/
+}
+
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
