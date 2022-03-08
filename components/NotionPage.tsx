@@ -37,6 +37,7 @@ import { ReactUtterances } from './ReactUtterances'
 
 import styles from './styles.module.css'
 
+/*
  const Code = dynamic(() =>
    import('react-notion-x').then((notion) => notion.Code)
  )
@@ -50,7 +51,7 @@ import styles from './styles.module.css'
    {
      ssr: false
    }
- )
+ )*/
 
 // TODO: PDF support via "react-pdf" package has numerous troubles building
 // with next.js
