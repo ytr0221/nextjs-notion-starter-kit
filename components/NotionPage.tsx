@@ -273,12 +273,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
         //searchNotion={searchNotion}
         pageFooter={comments}
         pageAside={pageAside}
-        footer={
+        /*footer={
           <Footer
             isDarkMode={darkMode.value}
             toggleDarkMode={darkMode.toggle}
           />
-        }
+        }*/
       />
 
       {/* <GitHubShareButton /> */}
