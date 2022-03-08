@@ -88,7 +88,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isLiteMode = lite === 'true'
   const searchParams = new URLSearchParams(params)
 
-  const darkMode = true//useDarkMode(false, { classNameDark: 'dark-mode' })
+  const darkMode = useDarkMode(false, { classNameDark: 'dark-mode' })
 
   if (router.isFallback) {
     return <Loading />
@@ -275,7 +275,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={
           <Footer
             isDarkMode={false}//darkMode.value}
-            //toggleDarkMode={darkMode.toggle}
+            toggleDarkMode={darkMode.toggle}
           />
         }
       />
