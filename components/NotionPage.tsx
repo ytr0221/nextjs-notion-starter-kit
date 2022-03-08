@@ -259,7 +259,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         recordMap={recordMap}
         rootPageId={site.rootNotionPageId}
         fullPage={!isLiteMode}
-        darkMode={false}//darkMode.value}
+        darkMode={true}//darkMode.value}
         previewImages={site.previewImages !== false}
         showCollectionViewDropdown={false}
         showTableOfContents={showTableOfContents}
@@ -274,7 +274,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={
           <Footer
-            isDarkMode={false}//darkMode.value}
+            isDarkMode={true}//darkMode.value}
             toggleDarkMode={darkMode.toggle}
           />
         }
