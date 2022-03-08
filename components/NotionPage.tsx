@@ -37,20 +37,20 @@ import { ReactUtterances } from './ReactUtterances'
 
 import styles from './styles.module.css'
 
-// const Code = dynamic(() =>
-//   import('react-notion-x').then((notion) => notion.Code)
-// )
-//
-// const Collection = dynamic(() =>
-//   import('react-notion-x').then((notion) => notion.Collection)
-// )
-//
-// const CollectionRow = dynamic(
-//   () => import('react-notion-x').then((notion) => notion.CollectionRow),
-//   {
-//     ssr: false
-//   }
-// )
+ const Code = dynamic(() =>
+   import('react-notion-x').then((notion) => notion.Code)
+ )
+
+ const Collection = dynamic(() =>
+   import('react-notion-x').then((notion) => notion.Collection)
+ )
+
+ const CollectionRow = dynamic(
+   () => import('react-notion-x').then((notion) => notion.CollectionRow),
+   {
+     ssr: false
+   }
+ )
 
 // TODO: PDF support via "react-pdf" package has numerous troubles building
 // with next.js
@@ -259,7 +259,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         recordMap={recordMap}
         rootPageId={site.rootNotionPageId}
         fullPage={!isLiteMode}
-        darkMode={true}//darkMode.value}
+        darkMode={!darkMode.value}
         previewImages={site.previewImages !== false}
         showCollectionViewDropdown={false}
         showTableOfContents={showTableOfContents}
@@ -274,7 +274,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={
           <Footer
-            isDarkMode={true}//darkMode.value}
+            isDarkMode={!darkMode.value}
             toggleDarkMode={darkMode.toggle}
           />
         }
