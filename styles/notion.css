@@ -7,6 +7,43 @@
  * places to add some flare.
  */
 
+.dark-mode {
+  --fg-color: rgb(55, 53, 47);
+  --fg-color-0: rgba(55, 53, 47, 0.09);
+  --fg-color-1: rgba(55, 53, 47, 0.16);
+  --fg-color-2: rgba(55, 53, 47, 0.4);
+  --fg-color-3: rgba(55, 53, 47, 0.6);
+  --fg-color-4: #000;
+  --fg-color-5: rgba(55, 53, 47, 0.024);
+  --fg-color-6: rgba(55, 53, 47, 0.8);
+  --fg-color-icon: var(--fg-color);
+
+  --bg-color: #fff;
+  --bg-color-0: rgba(135, 131, 120, 0.15);
+  --bg-color-1: rgb(247, 246, 243);
+  --bg-color-2: rgba(135, 131, 120, 0.15);
+
+  --notion-red: rgb(224, 62, 62);
+  --notion-pink: rgb(173, 26, 114);
+  --notion-blue: rgb(11, 110, 153);
+  --notion-purple: rgb(105, 64, 165);
+  --notion-teal: rgb(15, 123, 108);
+  --notion-yellow: rgb(223, 171, 1);
+  --notion-orange: rgb(217, 115, 13);
+  --notion-brown: rgb(100, 71, 58);
+  --notion-gray: rgb(155, 154, 151);
+
+  --notion-red_background: rgb(251, 228, 228);
+  --notion-pink_background: rgb(244, 223, 235);
+  --notion-blue_background: rgb(221, 235, 241);
+  --notion-purple_background: rgb(234, 228, 242);
+  --notion-teal_background: rgb(221, 237, 234);
+  --notion-yellow_background: rgb(251, 243, 219);
+  --notion-orange_background: rgb(250, 235, 221);
+  --notion-brown_background: rgb(233, 229, 227);
+  --notion-gray_background: rgb(235, 236, 237);
+}
+
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
