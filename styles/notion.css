@@ -18,6 +18,10 @@
   /*min-height: 100vh;*/
 }
 
+.notion-asset-wrapper img {
+  border-radius: 50px;
+}
+
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
