@@ -31,7 +31,7 @@ import { Page404 } from './Page404'
 import { PageHead } from './PageHead'
 import { PageActions } from './PageActions'
 import { Footer } from './Footer'
-import { PageSocial } from './PageSocial'
+//import { PageSocial } from './PageSocial'
 //import { GitHubShareButton } from './GitHubShareButton'
 import { ReactUtterances } from './ReactUtterances'
 
@@ -150,7 +150,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           repo={config.utterancesGitHubRepo}
           issueMap='issue-term'
           issueTerm='title'
-          theme={darkMode.value ? 'photon-dark' : 'github-light'}
+          theme='github-light'//{darkMode.value ? 'photon-dark' : 'github-light'}
         />
       )
     }
@@ -160,7 +160,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       pageAside = <PageActions tweet={tweet} />
     }
   } else {
-    pageAside = <PageSocial />
+    pageAside = <></>//<PageSocial />
   }
 
   return (
@@ -274,8 +274,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={
           <Footer
-            isDarkMode={darkMode.value}
-            toggleDarkMode={darkMode.toggle}
+            isDarkMode={false}//darkMode.value}
+            //toggleDarkMode={darkMode.toggle}
           />
         }
       />
