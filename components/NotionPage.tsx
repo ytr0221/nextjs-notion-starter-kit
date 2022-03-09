@@ -255,7 +255,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           code: Code,
           collection: NotionCollection,
           collectionRow: NotionCollectionRow,
-          tweet: Tweet,
+          //tweet: Tweet,
           modal: Modal,
           equation: Equation
         }}
