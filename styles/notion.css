@@ -210,6 +210,7 @@
 }
 
 .notion .notion-page-icon-cover {
+  display: none;
   margin-left: auto;
   margin-right: auto;
 }
