@@ -42,11 +42,11 @@ import styles from './styles.module.css'
    import('react-notion-x').then((notion) => notion.Code)
  )
 */
- const Collection = dynamic(() =>
+ const NotionCollection = dynamic(() =>
    import('react-notion-x').then((notion) => notion.Collection)
  )
 
- const CollectionRow = dynamic(
+ const NotionCollectionRow = dynamic(
    () => import('react-notion-x').then((notion) => notion.CollectionRow),
    {
      ssr: false
@@ -252,8 +252,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
             </Link>
           ),
           code: Code,
-          collection: Collection,
-          collectionRow: CollectionRow,
+          collection: NotionCollection,
+          collectionRow: NotionCollectionRow,
           tweet: Tweet,
           modal: Modal,
           equation: Equation
