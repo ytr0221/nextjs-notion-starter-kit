@@ -174,6 +174,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         }
       }}
     >*/
+      <>
       <PageHead site={site} />
 
       <Head>
@@ -281,6 +282,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           />
         }*/
       />
+      </>
 
       {/* <GitHubShareButton /> 
     </TwitterContextProvider>*/}
