@@ -384,9 +384,13 @@
   top: 0px;
   left: 0;
 }
+.notion-header .spacer {
+  margin: 0 0px;
+  color: var(--fg-color-2);
+}
 .notion-header {
   /*display:none;*/
-  display: fixed;
+  position: fixed;
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: saturate(180%) blur(16px);
 }
