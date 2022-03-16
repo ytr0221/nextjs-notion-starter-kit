@@ -46,7 +46,7 @@
 
 .notion {
   --notion-max-width: 720px;
-  --notion-header-height: 45px;
+  --notion-header-height: 54px;
 }
 
 /*.notion-app {
@@ -382,7 +382,7 @@
 .notion-header {
   /*display:none;*/
   /*top: 3px;*/
-  top: 0px;
+  top: 2px;
   /*position: fixed;*/
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: saturate(180%) blur(16px);
