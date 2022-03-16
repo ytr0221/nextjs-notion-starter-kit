@@ -381,16 +381,18 @@
 }
 .notion-header-anchor {
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: 0;
 }
+/*
 .notion-header .spacer {
   margin: 0 0px;
   color: var(--fg-color-2);
-}
+}*/
 .notion-header {
   /*display:none;*/
-  position: fixed;
+  top: 5px;
+  /*position: fixed;*/
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: saturate(180%) blur(16px);
 }
