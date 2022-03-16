@@ -381,7 +381,7 @@
 }
 .notion-header-anchor {
   position: absolute;
-  top: 6px;
+  top: 2px;
   left: 0;
 }
 /*
@@ -391,7 +391,7 @@
 }*/
 .notion-header {
   /*display:none;*/
-  top: 6px;
+  top: 2px;
   /*position: fixed;*/
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: saturate(180%) blur(16px);
