@@ -381,7 +381,7 @@
 }
 .notion-header {
   /*display:none;*/
-  top: 4px;
+  top: 3px;
   /*position: fixed;*/
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: saturate(180%) blur(16px);
