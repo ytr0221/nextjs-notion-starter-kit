@@ -379,11 +379,6 @@
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
-
-.notion-header .spacer {
-  margin: 0 50px;
-  color: var(--fg-color-2);
-}
 .notion-header {
   /*display:none;*/
   top: 4px;
